@@ -13,7 +13,7 @@ RUN bash -c 'touch /app.jar'
 # 容器启动命令
 #ENTRYPOINT ["java","-jar","/app.jar"]
 
-CMD java -jar app.jar
+CMD java -jar app.jar --port 8809
 
 
 # 设置时区
