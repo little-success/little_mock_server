@@ -6,7 +6,7 @@ ADD wiremock-jre8-standalone-2.29.0.jar  /app.jar
 
 
 # 镜像暴露的端口
-EXPOSE 8808
+EXPOSE 8809
 
 RUN bash -c 'touch /app.jar'
 
