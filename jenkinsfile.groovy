@@ -1,3 +1,10 @@
+stage('pull source code') {
+    node('master'){
+        git([url: 'https://github.com/little-success/little_mock_server.git', branch: 'master'])
+    }
+}
+
+
 stage('clean docker environment') {
     node('master'){
         try{
