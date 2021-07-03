@@ -39,7 +39,7 @@ stage('make new docker image') {
 stage('start docker container') {
     node('master'){
         try{
-            sh 'docker run --name my_container -d -p 8809:8809 mock:v1.0'
+            sh 'docker run --name my_mock_server -d -p 8809:8809 mock:v1.0'
         }catch(exc){
             echo 'Start docker image failed, please check the environment!'
         }
